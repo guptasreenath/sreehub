@@ -1,0 +1,321 @@
+Definations to remember : 
+Python programmers are affectionately called as Pythonistas
+In Python, 2 + 2 is called an expression
+= is called as assignment operator
+
+
+********************************************************************************
+exercises
+https://erlerobotics.gitbooks.io/erle-robotics-learning-python-gitbook-free/lists/exercises_list_and_dictionaries.html
+
+PERFECT SITE FOR PRACTICE
+https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/ifstatements.html
+http://codingbat.com/python
+https://projecteuler.net/archives
+http://www.codeabbey.com/index/task_list
+https://www.reddit.com/r/dailyprogrammer/
+http://www.pythonchallenge.com/
+https://regexone.com - expressions
+
+
+
+
+Top brand
+http://www.insofe.edu.in/
+
+referred by Eswar and the institute belongs to eswar friend.
+https://www.analytixlabs.co.in/
+
+udemy
+Coursera
+edx
+datacamp.com
+https://www.quora.com/What-are-good-ways-to-get-started-with-data-science-for-a-complete-novice
+
+TensorFlow 
+
+
+
+
+matlab, phython, R, SQL
+
+
+What does it take to be a Data Scientist?
+Is Data Science for all?
+Necessary Skills
+Where are the jobs?
+Why is now the right time for Data Science?
+What is the industry looking for? An insider’s view.
+What is the single most important point on your resume to grab the employers attention?
+Tech Infra you should be hands-on to be a real data scientist
+
+
+
+
+
+
+try.jupyter.org
+
+
+
+Connections
+there are three types of data links
+1. intger - any number without decimal(65)
+2. float - any number with decimal (65.56)
+3. string - any text (sreenath gupta)
+
+%d - int
+%f - float
+%s - str
+
+
+
+
+very useful links
+https://wiki.python.org/moin/BeginnersGuide/NonProgrammers
+
+
+
+
+
+**********************************************************************************************************************
+Day-2 - March-9
+-----------------
+ESCAPE SEQUENCES
+TYPE CASTING
+SEQUENTIAL STORAGES/DATASTRUCTURES OF PYTHON
+LISTS
+LIST OPERATIONS
+INDEXING
+MUTALBE VS IMMUTABLE
+-----------------
+
+
+Escape Sequences
+\n,\",\'
+
+
+Type Casting
+Integer->Float
+Float->Integer
+Integer->String
+float->string
+string->integer
+string->float
+1.int can be converted to float and string
+2.float can also be conveted to string and integer
+3.String cannot convert into integer or float expect in one condition if the value is in numeric.
+4.we can also use connectors instead of data types %s,%d,%f
+
+Sequential Storages/Data structures of python
+list[]
+sets{}
+tuples()
+dictionaries{a:b}
+->they store multiple values of same types
+->Dictionary is a collection of keys and values.
+a=[1,2,3,4,5]
+b=[60,45,24,32,12]
+weight=[60,40,80,20]
+names=["sreenath","prashanth","mahesh","bujji"]
+
+Lists
+indexing
+mutable vs immutable
+->Mutable : anything whose value can be changed (lists,dictonaries,sets)
+->Immutable: values cannot be changed(tuples)
+
+assignment in one line
+->one can apply values in multiple variables
+->a,b,c,d=10,20,30,40
+->a,b,c,d=10,"sreenath",25.5,[1,2,3,4,5]
+**************************************************************************************
+Day-3
+List operations
+Dictionries
+Dictionries operations
+conversion of list to dictionries
+
+
+list operations
+x=[1,2,3,4,5,]
+y=x.copy()  to copy
+x.clear()
+del x[4]
+
+Dictionries
+word->meaning
+words is called as a key
+meaning is called as value
+
+d1={"hate":"anger", "love":"anger"}
+d2={"sachin":100,"virat":90}
+
+surname={"sachin":"tendulkar","rahul":"dravid"}
+centuries={"tendulkar":100,"Dravid":200}
+
+lists->mutalbe
+dict->semimutalbe
+sets->semimutable
+tuples->immutable
+
+
+d1={"a":1,"b":2}
+d1["a"]=25
+
+Dict are mutalbes but cannot contain mutalbe as 'KEYS'
+
+d2={[a,b,c]:28}
+**********************************************************************
+Day-4
+
+len(d) - gives length of dictionary 'd'
+del d[k] - delete the K-V pair of dict 'd' or not
+k in d - checks whether a key in dict 'd' or not
+k not in d - checks whethere a key not in dict 'd'
+x=d.copy - makes a copy of dict d and stores in x
+dict1.update(dict2) - merges 2 dicts and sotes in dict1
+d.items() - returns all keys and values
+d.keys() - returns all keys
+d.values() - returns values
+
+
+conversion of list to dictionries
+
+list1=[a,b,c,d]
+list2=[1,2,3,4]
+
+x=zip(list1,list2)
+y=dict(x)
+print(y)
+***********************************************************************************
+Day-5
+Sets
+unique+semi-mutable
+set()
+{}
+frozen sets
+operatoins:
+.add()
+.clear()
+.copy()
+.difference()
+.difference_update(y)
+.discard()
+.remove()
+.intersection()
+.isdisjoint()
+.issubset()
+.issuperset()
+.pop()
+
+a={1,2,3,4,4,4,4,4,5,5,5,5,5}
+
+SET OPERATIONS
+
+x={1,2,3,4,5}
+y={1,2,3}
+z={10,20,30}
+*********************************************************************
+Tuples
+1. definition
+2. default
+3. indexing + single value
+4. immutable
+5. len()
+	a+b
+	a*b
+	3 in a
+	max()
+	min()
+*******************************************************************************
+march-19
+control flow
+a) For
+b) while
+c) break
+d) continue
+
+OOPS Concepts
+
+tasks
+print table of 17 (using for and while)
+search an element inside list
+use dictionary to return password for given user-name
+
+(search an element inside list)
+
+example : 1
+c=[6,9,5,8,7,2,3,4,8,9,6,2,1,4]
+d=5
+for i in range(len(c)):
+    if(c[i]==d):
+        print("index is",i)
+        break
+
+
+example : 2
+c=[6,9,5,8,7,2,3,4,8,9,6,2,1,4]
+x=0
+d=5
+e=8
+for i in range(len(c)):
+    if(c[i]==d):
+        print("index is",i)
+        x=x+1
+        continue
+    if(c[i]==e):
+        print("index is",i)
+        x=x+1
+    if(x==2):
+        break
+print(x)
+*****************************************************************
+1. define a method containing a dictionary of username and password
+2. give one input as "username"
+3. The method should return the password.
+
+answer : def sreesearch(x):
+    sreedict={"sreenath":"sree_123","mahesh":"mahesh_123","bujji":"bujji123"}
+    for i in sreedict.keys():
+        if(x==i):
+            print(sreedict[i])
+
+output : 
+sreesearch("mahesh")
+
+
+
+1. define a class which dows set operations
+2. define following methods inside the class:
+	a)intersection
+	b)difference
+	c)subset/superset
+	d)remove element
+	e)clear set
+
+
+
+1, print a table of 2 only till 10 if 11 then "tillten" exception
+2, search a value in a list.  if not found then "not found" exception
+3, sort a list in ascending order. if already in ascending order"already defined"exception"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
